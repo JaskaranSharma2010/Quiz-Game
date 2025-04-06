@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div id="category-screen" class="screen active">
+            <h1>Choose a Category</h1>
+            <div class="category-container">
+                <!-- General Knowledge: 9 -->
+                <button class="btn category-btn" data-category="9">
+                    <strong>General Knowledge</strong>
+                    <div id="container-stars">
+                        <div id="stars"></div>
+                    </div>
+                    <div id="glow">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </button>
+                
+                <!-- Video Games: 15 -->
+                <button class="btn category-btn" data-category="15">
+                    <strong>Video Games</strong>
+                    <div id="container-stars">
+                        <div id="stars"></div>
+                    </div>
+                    <div id="glow">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </button>
+                
+                <!-- Science & Nature: 17 -->
+                <button class="btn category-btn" data-category="17">
+                    <strong>Science</strong>
+                    <div id="container-stars">
+                        <div id="stars"></div>
+                    </div>
+                    <div id="glow">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </button>
+                
+                <!-- Computers: 18 -->
+                <button class="btn category-btn" data-category="18">
+                    <strong>Computers</strong>
+                    <div id="container-stars">
+                        <div id="stars"></div>
+                    </div>
+                    <div id="glow">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </button>
+                
+                <!-- Geography: 22 -->
+                <button class="btn category-btn" data-category="22">
+                    <strong>Geography</strong>
+                    <div id="container-stars">
+                        <div id="stars"></div>
+                    </div>
+                    <div id="glow">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </button>
+                
+                <!-- Mythology: 20 -->
+                <!-- <button class="btn category-btn" data-category="20">
+                    <strong>Mythology</strong>
+                    <div id="container-stars">
+                        <div id="stars"></div>
+                    </div>
+                    <div id="glow">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </button> -->
+                
+                <!-- Hinduism: 25 -->
+                <button class="btn category-btn" data-category="25">
+                    <strong>Hinduism</strong>
+                    <div id="container-stars">
+                        <div id="stars"></div>
+                    </div>
+                    <div id="glow">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-container">
+                <h2 id="question">Question goes here</h2>
+                <div id="loading-indicator" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Loading questions...</p>
+                </div>
+                <div class="options-container">
+                    <div class="option">
+                        <span class="option-text"></span>
+                        <span class="icon"></span>
+                    </div>
+                    <div class="option">
+                        <span class="option-text"></span>
+                        <span class="icon"></span>
+                    </div>
+                    <div class="option">
+                        <span class="option-text"></span>
+                        <span class="icon"></span>
+                    </div>
+                    <div class="option">
+                        <span class="option-text"></span>
+                        <span class="icon"></span>
+                    </div>
+                </div>
+                <!-- Remove or comment out the next button -->
+                <!-- <button id="next-btn" style="display: none;">Next Question</button> -->
+            </div>
+        </div>
+
+        <div id="results-screen" class="screen">
+            <div class="results-container">
+                <h1>Quiz Results</h1>
+                <div class="score-percentage">
+                    <h2>Your Score: <span id="score-percent">0</span>%</h2>
+                </div>
+                <div id="results-summary">
+                    <!-- Results will be inserted here -->
+                </div>
+                <button id="restart-btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
